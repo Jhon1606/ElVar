@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Oculta la barra de desplazamiento en el contenedor con scroll */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+    scrollbar-width: none; /* Para Firefox */
+}
